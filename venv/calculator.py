@@ -1,7 +1,6 @@
 L = 6
 F = 11
 
-11/17 * 10/16 * 9/15
 
 def calc_prob(fascist_cards, liberal_cards):
     # FFF prob
@@ -13,4 +12,8 @@ def calc_prob(fascist_cards, liberal_cards):
 
     # LLL prob
 
+    lll_prob = liberal_cards/(liberal_cards+fascist_cards)*(liberal_cards-1)/(fascist_cards+liberal_cards-1)*(liberal_cards-2)/(fascist_cards+liberal_cards-2)
+    print(lll_prob)
 calc_prob(11,6)
+
+
